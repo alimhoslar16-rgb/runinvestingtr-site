@@ -50,7 +50,7 @@ window.RIT_VERI = {
   ],
   dokumanKategorileri: ["Haftalık Analizler", "Makroekonomik Araştırmalar", "Finansal Eğitimler", "SPL 1. Düzey", "SPL 2. Düzey", "SPL 3. Düzey", "Türev Araçlar", "Videolu Anlatım"],
   dokumanlar: [
-    { id: "d1", kategori: "Makroekonomik Araştırmalar", tarih: "2026-09-26", baslik: "Tera ve Pusula Fon Krizi: Haftalar Öncesinden Yaptığım Uyarılar ve Krizin Anatomisi", dosya: "tera-pusula-fon-krizi.pdf", demo: true }
+    { id: "d1", kategori: "Makroekonomik Araştırmalar", tarih: "2026-09-26", baslik: "Tera ve Pusula Fon Krizi: Haftalar Öncesinden Yaptığım Uyarılar ve Krizin Anatomisi", dosya: "dosya/tera-pusula-fon-krizi.pdf", demo: true }
   ],
   // erişim alanları: arsiv (video arşivi), dokuman, canli, forum, spl
   paketler: [
