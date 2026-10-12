@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://runinvestingtr.com/sitemap.xml
