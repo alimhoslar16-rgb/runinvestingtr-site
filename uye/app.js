@@ -612,5 +612,7 @@
   // açılış: oturum (sihirli bağlantı dönüşü dahil) çözülür, veri yüklenir, sonra çizilir
   var oncekiKul;
   sb.auth.onAuthStateChange(function (olay, s) { var k = s ? s.user.id : null; if (k === oncekiKul) return; oncekiKul = k; if (db.yuklendi && db.oturum === k && !yukleSoz) return; setTimeout(function () { yukle().then(ciz).catch(function (e) { tost("Bağlantı hatası: " + (e.message || e)); db.yuklendi = true; ciz(); }); }, 0); });
-  window.addEventListener("hashchange", ciz); ciz();
+  window.addEventListener("hashchange", ciz);
+  document.addEventListener("click", function (e) { var a = e.target.closest && e.target.closest("#yeniden"); if (a) { e.preventDefault(); ciz(); window.scrollTo(0, 0); } });
+  ciz();
 })();
